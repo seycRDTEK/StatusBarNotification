@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+	id="cordova-plugin-statusBar-notification"
+	version="0.6.1">
+
+	<name>StatusBarNotification</name>
+	<description>StatusBar Notification Plugin</description>
+	<license>EYC</license>
+	<keywords>statusbar</keywords>
+
+	<js-module src="www/statusbarnotification.js">
+		<clobbers target="plugins.statusbarnotification" />
+	</js-module>
+
+
+	<!-- android -->
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="StatusBarNotification" >
+				<param name="android-package" value="com.eyc.statusBarNotification.StatusBarNotification"/>
+			</feature>
+		</config-file>
+
+		<source-file src="src/android/StatusBarNotification.java" target-dir="src/com/eyc/statusBarNotification/StatusBarNotification" />
+	</platform>
+</plugin>
