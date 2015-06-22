@@ -22,6 +22,7 @@
 			</feature>
 		</config-file>
 
-		<source-file src="src/android/StatusBarNotification.java" target-dir="src/com/eyc/statusBarNotification/StatusBarNotification" />
+		<source-file src="src/android/StatusBarNotification.java" target-dir="src/com/eyc/statusBarNotification" />
+		<source-file src="src/android/StatusNotificationIntent.java" target-dir="src/com/eyc/statusBarNotification" />
 	</platform>
 </plugin>
