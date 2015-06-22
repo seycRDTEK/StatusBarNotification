@@ -2,7 +2,7 @@
 package com.eyc.statusBarNotification;
 
 
-import com.eyc.mobility.R;
+import gsm.eyc.com.R;
 
 import android.annotation.SuppressLint;
 import android.app.Notification;
